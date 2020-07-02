@@ -1,0 +1,37 @@
+# curl 'https://www.gelbeseiten.de/Suche'
+#  -H 'authority: www.gelbeseiten.de'
+#  -H 'pragma: no-cache'
+#  -H 'cache-control: no-cache'
+#  -H 'upgrade-insecure-requests: 1'
+#  -H 'origin: https://www.gelbeseiten.de'
+#  -H 'content-type: application/x-www-form-urlencoded'
+#  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36'
+#  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+#  -H 'sec-fetch-site: same-origin'
+#  -H 'sec-fetch-mode: navigate'
+#  -H 'sec-fetch-dest: document'
+#  -H 'referer: https://www.gelbeseiten.de/Suche/Kunststofferzeugnisse/Berlin?umkreis=50000'
+#  -H 'accept-language: it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7'
+#  -H 'cookie: showCookieMessage=false; _wwau=id=2668649434358644700&c=1&ti=1593666043&v=1; _wwar=ti=1593666043&rt=r&src=www.google.com&el=%252F&v=1; _wwas=1593666043; _wwao=te=10&v=1; _ga=GA1.2.884997949.1593666044; _gid=GA1.2.816859748.1593666044; _fbp=fb.1.1593666044254.28176556; cX_S=kc4bm5pti5n8p6qf; cX_P=kc4bm5puw8dd4wdw; cX_G=cx%3A3d5bracmi48wyxvno9qkp6puw%3A37sckvlvn6pf4; was=Kunststofferzeugnisse; POPUPCHECK=1593752465348; kameleoonVisitorCode=_js_xkvf008k2zwf9pzz; leverate_session=1; _gat_tealium_0=1; leverate=eyJjcmVhdGVkIjoxNTkzNjY2MTAzNDI4LCJsYXN0QWN0aW9uIjoxNTkzNjY2MTQwNDk5LCJyZWZlcnJlciI6IiJ9; ioam2018=00158b32a8f43f5965efd69fb:1620536443867:1593666043867:.gelbeseiten.de:12:gelbseit:EList20:noevent:1593666140649:donvo2; utag_main=v_id:01730de5ff2900192e5c3872223f03069001b06100e50$_sn:1$_ss:0$_st:1593667950655$ses_id:1593666043692%3Bexp-session$_pn:11%3Bexp-session; _wwav=ti=1593666043&pc=11&ec=40&v=1'
+#  --data-raw 'WAS=Kunststofferzeugnisse&WO=Berlin&distance=50000&pid='
+#  --compressed
+POST https://www.gelbeseiten.de/Suche
+authority: www.gelbeseiten.de
+pragma: no-cache
+cache-control: no-cache
+upgrade-insecure-requests: 1
+origin: https://www.gelbeseiten.de
+user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+sec-fetch-site: same-origin
+sec-fetch-mode: navigate
+sec-fetch-dest: document
+referer: https://www.gelbeseiten.de/Suche/Kunststofferzeugnisse/Berlin?umkreis=50000
+accept-language: it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+cookie: showCookieMessage=false; _wwau=id=2668649434358644700&c=1&ti=1593666043&v=1; _wwar=ti=1593666043&rt=r&src=www.google.com&el=%252F&v=1; _wwas=1593666043; _wwao=te=10&v=1; _ga=GA1.2.884997949.1593666044; _gid=GA1.2.816859748.1593666044; _fbp=fb.1.1593666044254.28176556; cX_S=kc4bm5pti5n8p6qf; cX_P=kc4bm5puw8dd4wdw; cX_G=cx%3A3d5bracmi48wyxvno9qkp6puw%3A37sckvlvn6pf4; was=Kunststofferzeugnisse; POPUPCHECK=1593752465348; kameleoonVisitorCode=_js_xkvf008k2zwf9pzz; leverate_session=1; _gat_tealium_0=1; leverate=eyJjcmVhdGVkIjoxNTkzNjY2MTAzNDI4LCJsYXN0QWN0aW9uIjoxNTkzNjY2MTQwNDk5LCJyZWZlcnJlciI6IiJ9; ioam2018=00158b32a8f43f5965efd69fb:1620536443867:1593666043867:.gelbeseiten.de:12:gelbseit:EList20:noevent:1593666140649:donvo2; utag_main=v_id:01730de5ff2900192e5c3872223f03069001b06100e50$_sn:1$_ss:0$_st:1593667950655$ses_id:1593666043692%3Bexp-session$_pn:11%3Bexp-session; _wwav=ti=1593666043&pc=11&ec=40&v=1
+Content-Type: application/x-www-form-urlencoded
+
+WAS=Kunststofferzeugnisse&WO=Berlin&distance=50000&pid=
+
+###
+
