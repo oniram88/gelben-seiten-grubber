@@ -1,3 +1,7 @@
+GET https://sheets.googleapis.com/v4/spreadsheets/1s2SOaw740QJoB7M6QagZqK8xIeo4mlpPTf3WVFRuQ1g/values/Foglio1!B1:C5
+Accept: application/json
+
+###
 # curl 'https://www.gelbeseiten.de/Suche'
 #  -H 'authority: www.gelbeseiten.de'
 #  -H 'pragma: no-cache'
