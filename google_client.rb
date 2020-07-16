@@ -40,13 +40,17 @@ class GoogleClient
     credentials
   end
 
+  attr_reader :page
+
   # @param [String] spreadsheet_id
-  def initialize(spreadsheet_id)
+  # @param [String] page
+  def initialize(spreadsheet_id, page: 'simulazione')
     # Initialize the API
     @service = Google::Apis::SheetsV4::SheetsService.new
     @service.client_options.application_name = APPLICATION_NAME
     @service.authorization = authorize
     @spreadsheet_id = spreadsheet_id
+    @page = page
 
   end
 
@@ -55,7 +59,7 @@ class GoogleClient
     next_row = true
     start = 2
     while next_row
-      range = "simulazione!A#{start}:N#{start}"
+      range = "#{@page}!A#{start}:N#{start}"
       response = @service.get_spreadsheet_values @spreadsheet_id, range
       if response.values.empty?
         next_row = false
