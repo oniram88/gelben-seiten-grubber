@@ -75,17 +75,20 @@ class GoogleClient
           spedite: response.values.first[12],
           timestamp_spedizione: (DateTime.parse(response.values.first[13]) rescue nil)
         }
+        if dati[:email].to_s == ""
+          next_row = false
+        else
+          result = yield OpenStruct.new(dati)
 
-        result = yield OpenStruct.new(dati)
-
-        if result
-          values = response.values
-          values[0][12] = "SI"
-          values[0][13] = Time.now
-          response.update!(values: values)
-          @service.update_spreadsheet_value @spreadsheet_id, range, response, value_input_option: "RAW"
+          if result
+            values = response.values
+            values[0][12] = "SI"
+            values[0][13] = Time.now
+            response.update!(values: values)
+            @service.update_spreadsheet_value @spreadsheet_id, range, response, value_input_option: "RAW"
+          end
         end
-        start+=1
+        start += 1
       end
 
     end
